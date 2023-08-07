@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RapidTail - Your Quick Long Tail Keywords Generator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="title">Welcome to RapidTail</h1>
+            <h2 class="subtitle">Generating Long-Tail Keywords Fast and Easy</h2>
+            <p class="description">
+                Tired of wasting precious time manually combining keywords for your PPC campaigns? RapidTail has got you covered! Our tool creates long-tail keywords quickly and efficiently to maximize your ROAS. It's simple and user-friendly, making the process a breeze. Select your variables, type in your keywords and download your generated list!
+            </p>
+            <div class="card">
+                <label for="variables">Number of Variables:</label>
+                <select id="variables">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <div id="keywordFields"></div>
+                
+                <label for="matchType">Keyword Match Type:</label>
+                <select id="matchType">
+                    <option value="broad">Broad Match</option>
+                    <option value="phrase">"Phrase Match"</option>
+                    <option value="exact">[Exact Match]</option>
+                </select>
+
+                <button class="generateBtn">Generate Keywords</button>
+            </div>
+            <a id="downloadLink" class="hidden" download="keywords.txt">Download Keywords</a>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
